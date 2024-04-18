@@ -1,0 +1,34 @@
+<menu id="some-custom-menu">
+
+<item label="Terminal">
+    <action name="Execute" command="kgx" />
+  </item>
+  
+
+
+  
+  <item label="Home Directory">
+    <action name="Execute" command="nautilus" />
+  </item>
+ <item label="Text Editor">
+    <action name="Execute" command="gnome-text-editor" />
+  </item>
+ <item label="Web Browser">
+    <action name="Execute" command="google-chrome" />
+  </item>
+<separator/>
+
+  
+  <menu id="list-apps2" label="Windows" execute="/home/david/.local/bin/app-list.sh"/>
+  <menu id="panel-menu" label="Panel" execute="/home/david/.local/bin/panel-menu.sh"/>
+<separator/>
+
+  <item label="Reconfigure">
+    <action name="Reconfigure" />
+  </item>
+  <item label="Exit">
+    <action name="Exit" />
+  </item>
+</menu>
+
+
