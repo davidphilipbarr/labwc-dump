@@ -1,0 +1,5 @@
+# window drop-shadows
+window.active.shadow.size: 75
+window.inactive.shadow.size: 50
+window.active.shadow.color: #000000 60
+window.inactive.shadow.color: #000000 45
