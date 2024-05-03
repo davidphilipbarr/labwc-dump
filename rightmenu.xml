@@ -3,10 +3,7 @@
 <item label="Terminal">
     <action name="Execute" command="kgx" />
   </item>
-  
-
-
-  
+    
   <item label="Home Directory">
     <action name="Execute" command="nautilus" />
   </item>
@@ -14,21 +11,35 @@
     <action name="Execute" command="gnome-text-editor" />
   </item>
  <item label="Web Browser">
-    <action name="Execute" command="google-chrome" />
+    <action name="Execute" command="google-chrome --ozone-platform=wayland" />
   </item>
-<separator/>
-
   
-  <menu id="list-apps2" label="Windows" execute="/home/david/.local/bin/app-list.sh"/>
-  <menu id="panel-menu" label="Panel" execute="/home/david/.local/bin/panel-menu.sh"/>
+     <item label="Amberol">
+    <action name="Execute" command="amberol" />
+  </item>
+   <item label="Plex">
+    <action name="Execute" command="flatpak run tv.plex.PlexDesktop" />
+  </item>
+  
+   <item label="KiCad">
+    <action name="Execute" command="/home/david/.local/bin/kicad-dark.sh " />
+  </item>
+
+
+   <!--
+   
+   <separator/>
+  
+  
+  
+<item label="Change Background">
+    <action name="Execute" command="setbgz" />
+  </item>
+  
+  -->
 <separator/>
 
-  <item label="Reconfigure">
-    <action name="Reconfigure" />
-  </item>
-  <item label="Exit">
-    <action name="Exit" />
-  </item>
+  <menu id="app-list" label="Windows" execute="/home/david/.local/bin/app-list.sh"/>
+  <menu id="panel-menu" label="Panel" execute="/home/david/bin/panel-menu.sh"/>
+
 </menu>
-
-
