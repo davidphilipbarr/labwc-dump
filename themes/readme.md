@@ -1,7 +1,5 @@
 # Some Labwc themes of a Gnome flavour 
 
-Adwaita uses a corner radius of 12.
-
 ## Adwaita
 
 ![](adwaita.png)
