@@ -1,7 +1,7 @@
 # general
 border.width: 1
 padding.height: 8
-titlebar.height: 32
+titlebar.height: 34
 menu.items.padding.y:8
 menu.items.padding.x: 12
 menu.width.min: 140
@@ -12,15 +12,15 @@ window.label.text.justify: center
 
 # Active Windows
 window.active.title.bg.color: #303030
-window.active.border.color: #3f3f3f 85
+window.active.border.color: #3f3f3fee
 window.active.label.text.color: #ffffff
 window.active.indicator.toggled-keybind.color: #ff0000
 
-window.active.button.unpressed.image.color: #f8f8f8 95
-window.active.button.hover.image.color: #ffffff 0
-window.active.button.menu.unpressed.image.color: #ffffff 0
-window.active.button.max.unpressed.image.color: #ffffff 0
-window.active.button.iconify.unpressed.image.color: #ffffff 0
+window.active.button.unpressed.image.color: #e0e0e0
+window.active.button.hover.image.color: #ebebeb
+#window.active.button.menu.unpressed.image.color: #ebebeb
+#window.active.button.max.unpressed.image.color: #ebebeb
+#window.active.button.iconify.unpressed.image.color: #ebebeb
 
 # Inactive Windows
 window.inactive.title.bg.color: #242424
@@ -28,9 +28,9 @@ window.inactive.border.color: #242424 81
 window.inactive.label.text.color: #919191
 
 window.inactive.button.unpressed.image.color: #8e8e8e
-window.inactive.button.menu.unpressed.image.color: #8e8e8e 0
-window.inactive.button.max.unpressed.image.color: #8e8e8e 0
-window.inactive.button.iconify.unpressed.image.color: #8e8e8e 0
+window.inactive.button.menu.unpressed.image.color: #8e8e8e 
+window.inactive.button.max.unpressed.image.color: #8e8e8e 
+window.inactive.button.iconify.unpressed.image.color: #8e8e8e 
 
 # menu
 menu.items.bg.color: #353535
