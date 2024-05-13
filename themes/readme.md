@@ -19,3 +19,7 @@
 ## Solarized-dark (only use xbms)
 
 ![](solarized-dark.png)
+
+## Compiz
+
+![](compiz.png)
