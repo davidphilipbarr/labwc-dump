@@ -12,7 +12,7 @@
 
 ![](adwaita_labwc.png)
 
-## Adwaita-labwc (only use xbms)
+## Adwaita-labwc-dark (only use xbms)
 
 ![](adwaita_labwc_dark.png)
 
