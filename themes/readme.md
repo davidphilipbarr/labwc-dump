@@ -12,11 +12,11 @@
 
 ![](lig.png)
 
-## Adwaita-labwc (only use xbms)
+## Adwaita-labwc-dark (only use xbms)
 
 ![](adwaita_labwc.png)
 
-## Adwaita-labwc-dark (only use xbms)
+## Adwaita-labwc (only use xbms)
 
 ![](adwaita_labwc_dark.png)
 
