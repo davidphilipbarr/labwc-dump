@@ -8,6 +8,10 @@
 
 ![](adwaita_dark.png)
 
+## Adwaita-lignite
+
+![](lig.png)
+
 ## Adwaita-labwc (only use xbms)
 
 ![](adwaita_labwc.png)
