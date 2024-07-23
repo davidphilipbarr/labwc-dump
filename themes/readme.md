@@ -27,3 +27,7 @@
 ## Compiz
 
 ![](compiz.png)
+
+## arc-dark
+
+![](arc-dark.png)
