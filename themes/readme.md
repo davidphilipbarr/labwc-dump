@@ -31,3 +31,8 @@
 ## arc-dark
 
 ![](arc-dark.png)
+
+## th(re)eBear
+
+![](3bears.png)
+
