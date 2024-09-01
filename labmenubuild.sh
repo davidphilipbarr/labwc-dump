@@ -43,7 +43,29 @@ chrome-mpnpojknpmmopombnjdcgaaiekajbnjb-Default.desktop
 chrome-ncmjhecbjeaamljdfahankockkkdmedg-Default.desktop
 chrome-njbkenhmpdlalcafnbnplkmfjgeeofdn-Default.desktop
 chrome-pjibgclleladliembfgfagdaldikeohf-Default.desktop
+io.ulauncher.Ulauncher.desktop
+texdoctk.desktop
+yelp.desktop
 debi.desktop
+texdoctk.desktop
+rofi.desktop
+rofi-theme-selector.desktop
+org.gtk.Demo4.desktop
+org.gnome.Settings.desktop
+org.gnome.Shell.desktop
+org.gnome.Shell.Extensions.desktop
+org.gnome.OnlineAccounts.OAuth2.desktop
+org.gnome.Evince.desktop
+org.gnome.Evince-previewer.desktop
+io.ulauncher.Ulauncher.desktop
+display-im6.q16.desktop
+display-im6.q16hdri.desktop
+nm-applet.desktop
+nm-connection-editor.desktop
+org.gnome.Adwaita1.Demo.desktop
+vim.desktop
+synaptic.desktop
+
 EOF
 
 
