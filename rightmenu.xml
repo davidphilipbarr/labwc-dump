@@ -1,45 +1,86 @@
-<menu id="some-custom-menu">
+<menu id="right-menu">
 
 <item label="Terminal">
-    <action name="Execute" command="kgx" />
+    <action name="Execute" command="/home/david/.local/bin/runraise-terminal.sh" />
   </item>
     
   <item label="Home Directory">
-    <action name="Execute" command="nautilus" />
+    <action name="Execute" command="/home/david/.local/bin/runraise-fm.sh" />
   </item>
  <item label="Text Editor">
     <action name="Execute" command="gnome-text-editor" />
   </item>
- <item label="Web Browser">
-    <action name="Execute" command="google-chrome --ozone-platform=wayland" />
+    <item label="Web Browser">
+    <action name="Execute" command="/home/david/bin/firefox/firefox" />
   </item>
+   
+
   
+   <!--
+
+   
+ <item label="Discord">
+    <action name="Execute" command="discord" />
+  </item>  
+
      <item label="Amberol">
     <action name="Execute" command="amberol" />
   </item>
-   <item label="Plex">
+
+   <item label="Plex Media Player">
     <action name="Execute" command="flatpak run tv.plex.PlexDesktop" />
   </item>
-  
+
    <item label="KiCad">
     <action name="Execute" command="/home/david/.local/bin/kicad-dark.sh " />
   </item>
-
-
-   <!--
-   
-   <separator/>
-  
-  
-  
-<item label="Change Background">
-    <action name="Execute" command="setbgz" />
+-->
+  <separator/>
+   <item label="Applications">
+    <action name="Execute" command="ulauncher" />
   </item>
-  
+<separator/>  
+ 
+    <menu id="fav-menu" label="Pinned" execute="/home/david/.local/bin/labwcfav.sh"/>
+    <menu id="panel-menu" label="Panel" execute="/home/david/bin/panel-menu-lite.sh"/>
+    <menu id="app-list" label="Windows" execute="/home/david/.local/bin/app-list-cut.sh"/>
+
+
+</menu>
+
+
+<menu id="client-menu">
+  <item label="Minimize">
+    <action name="Iconify" />
+  </item>
+  <item label="Maximize">
+    <action name="ToggleMaximize" />
+  </item>
+  <item label="Fullscreen">
+    <action name="ToggleFullscreen" />
+  </item>  
+  <item label="Always on Top">
+    <action name="ToggleAlwaysOnTop" />
+  </item>
+  <!--
+    Any menu with the id "workspaces" will be hidden
+    if there is only a single workspace available.
   -->
-<separator/>
-
-  <menu id="app-list" label="Windows" execute="/home/david/.local/bin/app-list.sh"/>
-  <menu id="panel-menu" label="Panel" execute="/home/david/bin/panel-menu.sh"/>
-
+  <menu id="workspaces" label="Workspace">
+    <item label="Move Left">
+      <action name="SendToDesktop" to="left" />
+    </item>
+    <item label="Move Right">
+      <action name="SendToDesktop" to="right" />
+    </item>
+    <separator />
+    <item label="Always on Visible Workspace">
+      <action name="ToggleOmnipresent" />
+    </item>
+  </menu> 
+  
+  <separator/>
+  <item label="Close">
+    <action name="Close" />
+  </item>
 </menu>

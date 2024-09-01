@@ -15,7 +15,8 @@
   </placement>
   <!-- <font><theme> can be defined without an attribute to set all places -->
   <theme>
-    <name>Adwaita-dark-Close</name>
+    <titleLayout>WLC</titleLayout>
+    <name>Adwaita-Dark-Menu</name>
     <cornerRadius>12</cornerRadius>
     <dropShadows>yes</dropShadows>
     <font place="ActiveWindow">
@@ -120,6 +121,9 @@
     element, and then (re-)define any special binds you need such as launching
     your favourite terminal or application launcher. See rc.xml for an example.
   -->
+  <application name="re.sonny.Retro">
+    <layer>above</layer>
+  </application>
   <keyboard>
     <repeatRate>25</repeatRate>
     <repeatDelay>600</repeatDelay>
@@ -127,10 +131,10 @@
       <action name="NextWindow"/>
     </keybind>
     <keybind key="W-Return">
-      <action name="Execute" command="alacritty"/>
+      <action name="Execute" command="kgx"/>
     </keybind>
     <keybind key="A-F3">
-      <action name="Execute" command="bemenu-run"/>
+      <action name="Execute" command="ulauncher"/>
     </keybind>
     <keybind key="A-F4">
       <action name="Close"/>
@@ -138,23 +142,11 @@
     <keybind key="W-a">
       <action name="ToggleMaximize"/>
     </keybind>
-    <keybind key="A-Left">
-      <action name="MoveToEdge" direction="left"/>
-    </keybind>
-    <keybind key="A-Right">
-      <action name="MoveToEdge" direction="right"/>
-    </keybind>
     <keybind key="A-Up">
       <action name="MoveToEdge" direction="up"/>
     </keybind>
     <keybind key="A-Down">
       <action name="MoveToEdge" direction="down"/>
-    </keybind>
-    <keybind key="W-Left">
-      <action name="SnapToEdge" direction="left"/>
-    </keybind>
-    <keybind key="W-Right">
-      <action name="SnapToEdge" direction="right"/>
     </keybind>
     <keybind key="W-Up">
       <action name="SnapToEdge" direction="up"/>
@@ -180,6 +172,9 @@
     <keybind key="XF86_MonBrightnessDown">
       <action name="Execute" command="brightnessctl set 10%-"/>
     </keybind>
+    <keybind key="W-f">
+      <action name="Execute" command="/home/david/.local/bin/grimshot.sh"/>
+    </keybind>
     <!-- SnapToRegion via W-Numpad -->
     <!--
     <keybind key="W-KP_7"><action name="SnapToRegion" region="top-left" /></keybind>
@@ -192,6 +187,12 @@
     <keybind key="W-KP_2"><action name="SnapToRegion" region="bottom" /></keybind>
     <keybind key="W-KP_3"><action name="SnapToRegion" region="bottom-right" /></keybind>
     -->
+    <keybind key="A-Left">
+      <action name="GoToDesktop" to="left" wrap="yes"/>
+    </keybind>
+    <keybind key="A-Right">
+      <action name="GoToDesktop" to="right" wrap="yes"/>
+    </keybind>
   </keyboard>
   <!--
     Multiple <mousebind> can exist within one <context>
@@ -206,7 +207,7 @@
   -->
   <mouse>
     <!-- time is in ms -->
-    <doubleClickTime>500</doubleClickTime>
+    <doubleClickTime>1000</doubleClickTime>
     <scrollFactor>1.0</scrollFactor>
     <context name="Frame">
       <mousebind button="A-Left" action="Press">
@@ -303,30 +304,16 @@
         <action name="ShowMenu" menu="client-menu"/>
       </mousebind>
     </context>
-    <!--
-           <context name="WindowMenu">
-      <mousebind button="Left" action="Drag">
-        <action name="Move"/>
-      </mousebind>
-    </context>
-       <context name="Maximize">
+    <context name="Shade">
       <mousebind button="Left" action="Click">
-        <action name="Focus"/>
-        <action name="Raise"/>
-        <action name="ToggleMaximize"/>
+        <action name="ToggleShade"/>
       </mousebind>
     </context>
-   <context name="Maximize">
-      <mousebind button="Left" action="Drag">
-        <action name="Move"/>
-      </mousebind>
-    </context>
-    <context name="Iconify">
+    <context name="AllDesktops">
       <mousebind button="Left" action="Click">
-        <action name="Iconify"/>
+        <action name="ToggleOmnipresent"/>
       </mousebind>
     </context>
-     -->
     <context name="Close">
       <mousebind button="Left" action="Click">
         <action name="Close"/>
@@ -353,7 +340,7 @@
       </mousebind>
       -->
       <mousebind button="Right" action="Press">
-        <action name="ShowMenu" menu="some-custom-menu"/>
+        <action name="ShowMenu" menu="right-menu"/>
       </mousebind>
       <mousebind button="Middle" action="Press">
         <action name="ShowMenu" menu="root-menu"/>
@@ -417,4 +404,24 @@
     <!-- Property -->
     <windowRule identifier="" serverDecoration=""/>
   </windowRules>
+  <menu>
+    <ignoreButtonReleasePeriod>250</ignoreButtonReleasePeriod>
+  </menu>
+  <!--
+    Magnifier settings
+    'width' sets the width in pixels of the magnifier window.
+    'height' sets the height in pixels of the magnifier window.
+    'initScale' sets the initial magnification factor at boot.
+    'increment' sets the amount by which the magnification factor
+      changes when 'ZoomIn' or 'ZoomOut' are called.
+    'useFilter' sets whether to use a bilinear filter on the magnified
+      output or simply to take nearest pixel.
+  -->
+  <magnifier>
+    <width>400</width>
+    <height>400</height>
+    <initScale>2.0</initScale>
+    <increment>0.2</increment>
+    <useFilter>true</useFilter>
+  </magnifier>
 </labwc_config>

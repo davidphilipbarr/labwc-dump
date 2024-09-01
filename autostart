@@ -1,21 +1,20 @@
-#dbus-update-activation-environment --systemd XDG_CURRENT_DESKTOP XDG_SESSION_TYPE &
-#/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
-#/usr/bin/gnome-keyring-daemon --start --components=pkcs11 &
-#/usr/bin/gnome-keyring-daemon --start --components=secrets &
+#/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 > /dev/null 2>&1 &
+#/usr/bin/gnome-keyring-daemon --start --components=pkcs11 > /dev/null 2>&1&
+#/usr/bin/gnome-keyring-daemon --start --components=secrets> /dev/null 2>&1 &
+#/usr/bin/gnome-keyring-daemon --start --components=ssh > /dev/null 2>&1&
 #/usr/libexec/gsd-xsettings &
+export PATH=$PATH:$HOME/bin &
+dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY > /dev/null 2>&1 &
 #/usr/libexec/xdg-desktop-portal-wlr &
-#/usr/bin/gnome-keyring-daemon --start --components=ssh &
 labmenubuild.sh &
 wlr-randr --output eDP-1 --off &
-
-#systemctl --user mask xdg-desktop-portal-gnome &
-#waybar &
-#/home/david/.cargo/bin/waycorner &
-#kgx &
-#systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP &
-swaybg -i '/home/david/.local/share/backgrounds/swaybg-set.jpg' &
-/home/david/bin/surface-dial-daemon.sh &
-flatpak run re.sonny.Retro &
+#swaybg -i '/home/david/.local/share/backgrounds/swaybg-set.jpg' &
+/home/david/.local/bin/waypaper --restore >/dev/null 2>&1 &
+mako >/dev/null 2>&1 &
+/home/david/bin/surface-dial-daemon.sh >/dev/null 2>&1 &
+flatpak run re.sonny.Retro > /dev/null 2>&1 &
+lavalauncher -c /home/david/.config/lavalauncher/config.txt &
+syshud > /dev/null 2>&1 &
 
 swayidle -w \
 	timeout 300 'swaylock -f -c 000000' \

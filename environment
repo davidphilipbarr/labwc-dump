@@ -1,33 +1,10 @@
-#
-# Set system-wide environment variables here for Openbox
-# User-specific variables should be placed in $HOME/.config/openbox/environment
-#
 
-# To set your language for displaying messages and time/date formats, use the following:
 #LANG=en_CA.UTF8
-
-# To set your keyboard layout, you need to modify your X config:
 MOZ_ENABLE_WAYLAND=1
-#XDG_CURRENT_DESKTOP=wlroots
-#DISPLAY=localhost:0.0
-# DISPLAY=:0
-#XDG_SESSION_CLASS=user
-#DESKTOP_SESSION=wlroots
-export PATH=$PATH:$HOME/bin
-
 # gnome?
-#XDG_CURRENT_DESKTOP=wlroots
-#XDG_SESSION_DESKTOP=wlroots
-#XDG_SESSION_TYPE=wlroots
-
-#DESKTOP_SESSION=gnome
-#XDG_SESSION_DESKTOP=gnome
-XDG_SESSION_TYPE=wayland
-#WAYLAND_DISPLAY=wayland-0
-#GNOME_SETUP_DISPLAY=:1
-#XDG_SESSION_CLASS=user
-
-
+XDG_CURRENT_DESKTOP=wlroots
+# XDG_SESSION_TYPE=wayland
+WLR_NO_HARDWARE_CURSORS=1
 XCURSOR_THEME=Adwaita
 XCURSOR_SIZE=24
 XKB_DEFAULT_LAYOUT=gb
