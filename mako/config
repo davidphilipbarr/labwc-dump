@@ -1,0 +1,12 @@
+font="IBM Plex Sans Regular" 9
+background-color=#303030
+text-color=#ffffff
+border-size=1
+border-color=#444444
+border-radius=12
+padding=20
+max-icon-size=24
+anchor=top-center
+default-timeout=4000
+width=500
+

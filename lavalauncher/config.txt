@@ -1,0 +1,130 @@
+  global-settings
+  {
+  	watch-config-file = false;
+  }
+
+bar
+{
+	output            = HDMI-A-2;
+	position          = left;
+	background-colour = "#303030f1";
+border-colour= "#444444fa";
+cursor-name="left_ptr";
+ icon-padding="10";
+ radius="16";
+ size="80";
+ margin="0";
+hidden-mode="always";
+hidden-size="30";
+exclusive-zone="false";
+layer="top";
+	# Condition for the default configuration set.
+	condition-resolution = wider-than-high;
+
+	config
+	{
+		# Condition for this configuration set.
+		#condition-resolution = higher-than-wide;
+
+		# Additional configuration sets copy the default configuration set,
+		# but settings can be overwritten.
+		#position = bottom;
+	}
+
+	button
+	{
+		image-path = /usr/share/icons/hicolor/scalable/apps/org.gnome.Ptyxis.svg;
+		command[mouse-left]    = /home/david/.local/bin/runraise-terminal.sh;
+		 command[mouse-middle] = ptyxis  --new-window;
+	}
+
+	button
+	{
+		image-path = /home/david/.local/share/icons/hicolor/scalable/apps/firefox.svg;
+		command    = /home/david/bin/firefox/firefox;
+	}
+
+	button
+	{
+		image-path = /home/david/.local/share/icons/Apps/scalable/apps/chrome.svg;
+		command    = google-chrome;
+	}
+
+        button
+	{
+		image-path = /usr/share/icons/hicolor/scalable/apps/org.gnome.TextEditor.svg;
+		command[mouse-left]    = runraise org.gnome.TextEditor gnome-text-editor;
+		command[mouse-middle]    = gnome-text-editor --new-window;
+	}
+
+
+	
+	
+		button
+	{
+		image-path = /home/david/.local/share/icons/hicolor/scalable/apps/plex.svg;
+
+			command    = flatpak run tv.plex.PlexDesktop;
+	}
+	
+			button
+	{
+		image-path = /home/david/.local/share/icons/hicolor/scalable/apps/plexamp.svg;
+
+			command    = pal.sh;
+	}
+	button
+	{
+		image-path = /home/david/.local/share/icons/hicolor/scalable/apps/org.inkscape.Inkscape.svg;
+			command    = flatpak run org.inkscape.Inkscape  ;
+	}
+	
+button
+	{
+		image-path = /usr/share/icons/hicolor/scalable/apps/io.bassi.Amberol.svg;
+			command    = amberol  ;
+	}
+	
+	button
+	{
+		image-path = /home/david/.local/share/icons/hicolor/scalable/apps/kicad.svg;
+			command    = flatpak run org.kicad.KiCad ;
+	}	
+button
+	{
+		image-path = /home/david/.local/share/icons/hicolor/scalable/apps/com.discordapp.Discord.svg;
+			command    = discord;
+	}	
+button
+	{
+		image-path = /home/david/.local/share/icons/Apps/scalable/apps/org.gimp.GIMP-dev.svg;
+			command    = flatpak run org.gimp.GIMP;
+	}	
+	
+	button
+	{
+		image-path = /home/david/.local/share/icons/Apps/scalable/apps/gitg-org.svg;
+			command    = runraise gitg gitg;
+	}	
+	
+	
+	button
+	{
+		image-path = /usr/share/icons/hicolor/scalable/apps/org.gnome.Nautilus.svg;
+
+			command[mouse-middle]    = nautilus;
+			command[mouse-left] = /home/david/.local/bin/runraise-fm.sh;
+	}
+	
+		button
+	{
+		image-path = /home/david/.local/share/icons/Apps/scalable/apps/audio.svg;
+
+			command[mouse-left]    = pavucontrol;
+			command[scroll-up]         = amixer sset Master 5%+;
+		command[scroll-down]       = amixer sset Master 5%-;
+			
+	}
+}
+
+
