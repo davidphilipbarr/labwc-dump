@@ -1,11 +1,20 @@
-#ROUGH STAB at arc theme V0
+#ROUGH STAB at arc theme V0.01
 
 # general
 border.width: 1
 padding.height:3
 
+# general
+window.titlebar.padding.width: 4
+window.titlebar.padding.height: 4
 window.label.text.justify: center
-titlebar.height: 34
+
+# buttons
+window.button.spacing: 6
+window.button.hover.bg.corner-radius: 12
+window.button.width: 22
+window.button.height: 22
+
 
 # Active Windows
 window.active.title.bg.color: #2f343f 98
@@ -31,17 +40,20 @@ window.inactive.button.iconify.unpressed.image.color: #000000 0
 # menu
 menu.items.padding.y:8
 menu.items.padding.x: 12
-menu.width.min: 140
-menu.width.max: 900
+menu.width.min: 190
+menu.width.max: 400
+
 menu.overlap.x: 2
 menu.overlap.y: 0
-menu.width.min: 140
-menu.width.max: 900
+
+menu.items.border.width: 0
+menu.border.color: #2d3036
 
 menu.items.bg.color: #454a54 98
 menu.items.text.color: #a8adb5
 menu.items.active.bg.color: #5294E2 98
 menu.items.active.text.color: #ffffff
+
 menu.separator.width: 1
 menu.separator.padding.width: 6
 menu.separator.padding.height: 3
@@ -61,8 +73,6 @@ osd.window-switcher.item.active.border.width: 2
 
 osd.workspace-switcher.boxes.width: 68
 osd.workspace-switcher.boxes.height: 28
-
-
 
 snapping.preview.region.fill: yes
 snapping.preview.edge.fill: yes
