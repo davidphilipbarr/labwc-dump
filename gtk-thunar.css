@@ -1,0 +1,144 @@
+
+
+window.background.chromium, label.chromium .chromium, chromium {
+font-size: 1em;
+font-weight: 400
+}
+/*ytabs */
+
+*.chromium *, menu.chromium, label.chromium {
+
+font-weight: 400
+}
+window.background.chrome  textview.view { 
+
+  }
+  
+
+
+   window.background.chromium { 
+
+ background: #f2f2f2
+}  
+  /* window background */
+   window.background.chromium .titlebar{ 
+background: #BED8F6;
+ background: #fff;
+
+
+}/*
+ window.background.chromium .titlebar::backdrop separator.vertical.titlebutton {
+ background: #CDE0F8;
+}
+ */
+ window.background.chromium .titlebar:backdrop { 
+
+
+color: #555
+}
+  /* 
+window.background.chromium  button { 
+background: #CDE0F8;
+  }
+*/
+.titlebar.chromium, chromium headerbar {
+ border:0
+ }
+ 
+ entry.chromium:focus, entry.chromium:disabled, entry {
+border: 1px solid #ccc;
+background: #F2F2F2
+}
+ 
+
+.thunar.background.csd treeview, .thunar.background treeview {
+background-color: #F2F2F2
+}
+
+  window.chromium .titlebar{
+  
+  min-height: 50px
+  
+  }
+  
+  window.background.chromium headerbar.header-bar {  
+  min-height: 50px
+  
+  }
+  separator.horizontal
+{
+background: #DADADA
+}
+
+
+menubar, menu.chromium{
+
+}
+
+menu.chromium, menu.chromium label, treeview.view.cell.chromium{
+background: white;
+font-size: 1em;
+font-weight: 400
+}
+/*
+treeview.view,treeview.view.cell,
+treeview.view.cell:selected:focus, treeview.view button{
+background: purple;
+font-size: 1em;
+font-weight: 400
+}
+*/
+label selection.chromium{
+background: red;
+font-size: 1em;
+font-weight: 400
+}
+
+button.text-button label.chromium{
+background: green
+}
+
+
+combobox window.background.popup.chromium {
+background: orange;
+font-size: 1em;
+font-weight: 400
+}
+
+* {
+   -ThunarAbstractIconView-row-spacing: 15;
+   -ThunarAbstractIconView-column-spacing: 32;
+ }
+ 
+ .thunar.background .sidebar .view{
+background-color: #F2F2F2;
+padding: 6px 0;
+color: #303030
+}
+
+ .thunar.background .sidebar .view:hover{
+background-color: #ebebeb;
+}
+
+ .thunar.background .sidebar .view:focus {
+background-color: #ebebeb;
+}
+
+ .thunar.background .sidebar .view:selected {
+background-color: #D8D8D8
+}
+
+
+.thunar toolbar {
+padding:0;
+background:transparent
+}
+
+.thunar toolbar button.flat {
+
+margin-top:3px
+}
+
+.thunar headerbar {
+border-bottom: 0
+}
