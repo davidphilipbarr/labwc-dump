@@ -1,5 +1,8 @@
 # Some Labwc themes of a Gnome flavour 
 
+A updated version of the Adwaita themes has moved here and will/should be activly maintained... https://github.com/davidphilipbarr/labwc-adwaita
+
+
 ## Adwaita
 
 ![](adwaita.png)
